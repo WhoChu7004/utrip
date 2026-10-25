@@ -107,9 +107,9 @@ window.TRAVEL_DATA = [
     "fee": "성인 8000원 (7000원 표기 자료도 있음)",
     "season": "봄~가을",
     "features": "이국적인 돌탑 풍경 / 좌표는 삼성궁 주차장",
-    "recommend": 3,
-    "channels": ["파파트래블(PAPATRAVEL)", "더여행", "매주 떠나는 호캉스"],
-    "channel": "파파트래블(PAPATRAVEL), 더여행, 매주 떠나는 호캉스",
+    "recommend": 4,
+    "channels": ["파파트래블(PAPATRAVEL)", "더여행", "매주 떠나는 호캉스", "유랑쓰 YOURANGSS"],
+    "channel": "파파트래블(PAPATRAVEL), 더여행, 매주 떠나는 호캉스, 유랑쓰 YOURANGSS",
     "videos": [
       {
         "url": "https://youtu.be/zVfNoonJDJs",
@@ -125,6 +125,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/FyzWDMmKrTI",
         "title": "단풍명소 추천 22곳🍁10월,11월 단풍여행지 총정리(서울·경기도·강원도·충청도·전라도) 단풍산행, 단풍사찰, 단풍구경 갈만한곳",
         "channel": "매주 떠나는 호캉스"
+      },
+      {
+        "url": "https://youtu.be/RSf6Wv-21OM",
+        "title": "한국에 이런 곳이 있었다니... 해외여행만 다닌 게 후회됩니다",
+        "channel": "유랑쓰 YOURANGSS"
       }
     ],
     "url": "https://youtu.be/zVfNoonJDJs"
@@ -956,6 +961,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/axXTeNVoPjk",
         "title": "지하철 타고 떠나는 서울 근교 가을 여행 BEST 8 | 그 시절 추억까지 담아오는 60대 뚜벅이 여행",
         "channel": "옥란팔도탐방TV - 시니어 쉬운 여행 전문"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/TeSz_Fz_lX8"
@@ -972,9 +982,9 @@ window.TRAVEL_DATA = [
     "fee": "성인 11,000원",
     "season": "가을(단풍)",
     "features": "가을 정원 / 오색별빛 정원전",
-    "recommend": 2,
-    "channels": ["오탐구여행", "옥란팔도탐방TV - 시니어 쉬운 여행 전문"],
-    "channel": "오탐구여행, 옥란팔도탐방TV - 시니어 쉬운 여행 전문",
+    "recommend": 3,
+    "channels": ["오탐구여행", "옥란팔도탐방TV - 시니어 쉬운 여행 전문", "더여행"],
+    "channel": "오탐구여행, 옥란팔도탐방TV - 시니어 쉬운 여행 전문, 더여행",
     "videos": [
       {
         "url": "https://youtu.be/TeSz_Fz_lX8",
@@ -985,6 +995,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/axXTeNVoPjk",
         "title": "지하철 타고 떠나는 서울 근교 가을 여행 BEST 8 | 그 시절 추억까지 담아오는 60대 뚜벅이 여행",
         "channel": "옥란팔도탐방TV - 시니어 쉬운 여행 전문"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/TeSz_Fz_lX8"
@@ -1047,6 +1062,11 @@ window.TRAVEL_DATA = [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
+        "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
         "channel": "더여행"
       }
     ],
@@ -1112,9 +1132,9 @@ window.TRAVEL_DATA = [
     "fee": "무료",
     "season": "가을(단풍)",
     "features": "단풍나무숲길·은행나무길 / 좌표는 독립기념관 기준",
-    "recommend": 2,
-    "channels": ["오탐구여행", "더여행"],
-    "channel": "오탐구여행, 더여행",
+    "recommend": 3,
+    "channels": ["오탐구여행", "더여행", "여행하는 손작 - 여행 산행 트레킹"],
+    "channel": "오탐구여행, 더여행, 여행하는 손작 - 여행 산행 트레킹",
     "videos": [
       {
         "url": "https://youtu.be/TeSz_Fz_lX8",
@@ -1130,6 +1150,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
         "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/qoAjyLXfrb8",
+        "title": "11월에 놓치면 아까운 가을 여행지, 천안 아산 당일치기 단풍명소 4곳 추천 I 독립기념관 / 곡교천 은행나무길 / 현충사 / 공세리 성당",
+        "channel": "여행하는 손작 - 여행 산행 트레킹"
       }
     ],
     "url": "https://youtu.be/TeSz_Fz_lX8"
@@ -1933,14 +1958,19 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(단풍)",
     "features": "사찰 단풍",
-    "recommend": 1,
-    "channels": ["매주 떠나는 호캉스"],
-    "channel": "매주 떠나는 호캉스",
+    "recommend": 2,
+    "channels": ["매주 떠나는 호캉스", "맛쫑tour"],
+    "channel": "매주 떠나는 호캉스, 맛쫑tour",
     "videos": [
       {
         "url": "https://youtu.be/FyzWDMmKrTI",
         "title": "단풍명소 추천 22곳🍁10월,11월 단풍여행지 총정리(서울·경기도·강원도·충청도·전라도) 단풍산행, 단풍사찰, 단풍구경 갈만한곳",
         "channel": "매주 떠나는 호캉스"
+      },
+      {
+        "url": "https://youtu.be/wvgop6C8bnA",
+        "title": "10월 11월 충청도 가볼만한곳 5곳｜가을 단풍부터 꽃축제까지",
+        "channel": "맛쫑tour"
       }
     ],
     "url": "https://youtu.be/FyzWDMmKrTI"
@@ -1957,9 +1987,9 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(단풍)",
     "features": "천주교 성지 단풍",
-    "recommend": 2,
-    "channels": ["매주 떠나는 호캉스", "여행나라"],
-    "channel": "매주 떠나는 호캉스, 여행나라",
+    "recommend": 3,
+    "channels": ["매주 떠나는 호캉스", "여행나라", "행복한국"],
+    "channel": "매주 떠나는 호캉스, 여행나라, 행복한국",
     "videos": [
       {
         "url": "https://youtu.be/FyzWDMmKrTI",
@@ -1970,6 +2000,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/3iSmTFtqb_8",
         "title": "2026 단풍절정은 언제? 시기별 단풍명소 총정리 12곳, 10월 중순~11월 말까지, 10월 가볼만한곳, 11월 가볼만한곳, 10월 단풍명소, 11월 단풍명소",
         "channel": "여행나라"
+      },
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
       }
     ],
     "url": "https://youtu.be/FyzWDMmKrTI"
@@ -2025,6 +2060,11 @@ window.TRAVEL_DATA = [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
+        "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
         "channel": "더여행"
       }
     ],
@@ -2232,14 +2272,19 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(억새)",
     "features": "은빛 억새 / 좌표는 명성산 정상 기준",
-    "recommend": 1,
-    "channels": ["우주트래블로그"],
-    "channel": "우주트래블로그",
+    "recommend": 2,
+    "channels": ["우주트래블로그", "더여행"],
+    "channel": "우주트래블로그, 더여행",
     "videos": [
       {
         "url": "https://youtu.be/KO-Gb67YfLk",
         "title": "올가을엔 여기만 가세요! 직접 다녀온 국내 가을 여행지 추천 TOP 13 (절정 시기·단풍 명소 총정리)",
         "channel": "우주트래블로그"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/KO-Gb67YfLk"
@@ -2379,14 +2424,19 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을",
     "features": "메타세쿼이아 숲",
-    "recommend": 1,
-    "channels": ["우주트래블로그"],
-    "channel": "우주트래블로그",
+    "recommend": 2,
+    "channels": ["우주트래블로그", "행복한국"],
+    "channel": "우주트래블로그, 행복한국",
     "videos": [
       {
         "url": "https://youtu.be/KO-Gb67YfLk",
         "title": "올가을엔 여기만 가세요! 직접 다녀온 국내 가을 여행지 추천 TOP 13 (절정 시기·단풍 명소 총정리)",
         "channel": "우주트래블로그"
+      },
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
       }
     ],
     "url": "https://youtu.be/KO-Gb67YfLk"
@@ -2467,6 +2517,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
         "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/3iSmTFtqb_8"
@@ -2520,6 +2575,11 @@ window.TRAVEL_DATA = [
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
         "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/3iSmTFtqb_8"
@@ -2548,6 +2608,11 @@ window.TRAVEL_DATA = [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
+        "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
         "channel": "더여행"
       }
     ],
@@ -2921,13 +2986,23 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(은행)",
     "features": "저수지 은행나무길 / 좌표는 문광저수지 기준",
-    "recommend": 1,
-    "channels": ["더여행"],
-    "channel": "더여행",
+    "recommend": 2,
+    "channels": ["더여행", "행복한국"],
+    "channel": "더여행, 행복한국",
     "videos": [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
+        "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
         "channel": "더여행"
       }
     ],
@@ -2945,14 +3020,19 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(단풍)",
     "features": "단풍 사적지",
-    "recommend": 1,
-    "channels": ["더여행"],
-    "channel": "더여행",
+    "recommend": 2,
+    "channels": ["더여행", "여행하는 손작 - 여행 산행 트레킹"],
+    "channel": "더여행, 여행하는 손작 - 여행 산행 트레킹",
     "videos": [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
         "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/qoAjyLXfrb8",
+        "title": "11월에 놓치면 아까운 가을 여행지, 천안 아산 당일치기 단풍명소 4곳 추천 I 독립기념관 / 곡교천 은행나무길 / 현충사 / 공세리 성당",
+        "channel": "여행하는 손작 - 여행 산행 트레킹"
       }
     ],
     "url": "https://youtu.be/WozJNGlUp8I"
@@ -2967,16 +3047,931 @@ window.TRAVEL_DATA = [
     "fee": "미확인",
     "season": "가을(은행)",
     "features": "은행나무길",
-    "recommend": 1,
-    "channels": ["더여행"],
-    "channel": "더여행",
+    "recommend": 4,
+    "channels": ["더여행", "여행하는 손작 - 여행 산행 트레킹", "행복한국", "맛쫑tour"],
+    "channel": "더여행, 여행하는 손작 - 여행 산행 트레킹, 행복한국, 맛쫑tour",
     "videos": [
       {
         "url": "https://youtu.be/WozJNGlUp8I",
         "title": "단풍명소 베스트 12",
         "channel": "더여행"
+      },
+      {
+        "url": "https://youtu.be/qoAjyLXfrb8",
+        "title": "11월에 놓치면 아까운 가을 여행지, 천안 아산 당일치기 단풍명소 4곳 추천 I 독립기념관 / 곡교천 은행나무길 / 현충사 / 공세리 성당",
+        "channel": "여행하는 손작 - 여행 산행 트레킹"
+      },
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
+      },
+      {
+        "url": "https://youtu.be/wvgop6C8bnA",
+        "title": "10월 11월 충청도 가볼만한곳 5곳｜가을 단풍부터 꽃축제까지",
+        "channel": "맛쫑tour"
+      },
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
       }
     ],
     "url": "https://youtu.be/WozJNGlUp8I"
+  },
+  {
+    "id": 121,
+    "name": "천안 풍세커피",
+    "location": "충남 천안",
+    "coords": "",
+    "points": [],
+    "type": "카페",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "한옥카페",
+    "recommend": 1,
+    "channels": ["여행하는 손작 - 여행 산행 트레킹"],
+    "channel": "여행하는 손작 - 여행 산행 트레킹",
+    "videos": [
+      {
+        "url": "https://youtu.be/qoAjyLXfrb8",
+        "title": "11월에 놓치면 아까운 가을 여행지, 천안 아산 당일치기 단풍명소 4곳 추천 I 독립기념관 / 곡교천 은행나무길 / 현충사 / 공세리 성당",
+        "channel": "여행하는 손작 - 여행 산행 트레킹"
+      }
+    ],
+    "url": "https://youtu.be/qoAjyLXfrb8"
+  },
+  {
+    "id": 122,
+    "name": "아산 공세리 성당",
+    "location": "충남 아산",
+    "coords": "36.882908, 126.913244",
+    "points": [
+      [36.882908, 126.913244]
+    ],
+    "type": "문화·역사",
+    "fee": "미확인",
+    "season": "가을(단풍)",
+    "features": "단풍이 아름다운 성당",
+    "recommend": 1,
+    "channels": ["여행하는 손작 - 여행 산행 트레킹"],
+    "channel": "여행하는 손작 - 여행 산행 트레킹",
+    "videos": [
+      {
+        "url": "https://youtu.be/qoAjyLXfrb8",
+        "title": "11월에 놓치면 아까운 가을 여행지, 천안 아산 당일치기 단풍명소 4곳 추천 I 독립기념관 / 곡교천 은행나무길 / 현충사 / 공세리 성당",
+        "channel": "여행하는 손작 - 여행 산행 트레킹"
+      }
+    ],
+    "url": "https://youtu.be/qoAjyLXfrb8"
+  },
+  {
+    "id": 123,
+    "name": "경주 통일전",
+    "location": "경북 경주",
+    "coords": "35.798450, 129.240333",
+    "points": [
+      [35.79845, 129.240333]
+    ],
+    "type": "역사·산책",
+    "fee": "미확인",
+    "season": "가을(은행)",
+    "features": "은행나무길 / 등산 없이 걷는 단풍 명소",
+    "recommend": 1,
+    "channels": ["행복한국"],
+    "channel": "행복한국",
+    "videos": [
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
+      }
+    ],
+    "url": "https://youtu.be/0PJk2_yUWU4"
+  },
+  {
+    "id": 124,
+    "name": "진안 주천생태공원",
+    "location": "전북 진안",
+    "coords": "35.970114, 127.435661",
+    "points": [
+      [35.970114, 127.435661]
+    ],
+    "type": "산책",
+    "fee": "미확인",
+    "season": "가을(단풍)",
+    "features": "단풍 숲 산책",
+    "recommend": 1,
+    "channels": ["행복한국"],
+    "channel": "행복한국",
+    "videos": [
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
+      }
+    ],
+    "url": "https://youtu.be/0PJk2_yUWU4"
+  },
+  {
+    "id": 125,
+    "name": "청주 청남대",
+    "location": "충북 청주",
+    "coords": "36.462234, 127.490382",
+    "points": [
+      [36.462234, 127.490382]
+    ],
+    "type": "역사·산책·정원",
+    "fee": "미확인",
+    "season": "가을(단풍)",
+    "features": "옛 대통령 별장 / 호숫가 단풍 산책",
+    "recommend": 1,
+    "channels": ["행복한국"],
+    "channel": "행복한국",
+    "videos": [
+      {
+        "url": "https://youtu.be/0PJk2_yUWU4",
+        "title": "등산하지 않아도 됩니다! 걷기 좋은 국내 단풍 명소 7곳",
+        "channel": "행복한국"
+      }
+    ],
+    "url": "https://youtu.be/0PJk2_yUWU4"
+  },
+  {
+    "id": 126,
+    "name": "구미 금오산 올레길",
+    "location": "경북 구미",
+    "coords": "36.120023, 128.315287",
+    "points": [
+      [36.120023, 128.315287]
+    ],
+    "type": "산책·트레킹",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "금오지 둘레 수변 산책로",
+    "recommend": 1,
+    "channels": ["Jay쌤여행TV"],
+    "channel": "Jay쌤여행TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/a---yuKpFrg",
+        "title": "한국 최고의 수변산책로 BEST4 (5편) /국내여행 추천 /10월 국내여행지 추천 /11월 국내여행지 추천 /걷기 좋은길 /수변 데크길 /데크 산책로 /트레킹 명소",
+        "channel": "Jay쌤여행TV"
+      }
+    ],
+    "url": "https://youtu.be/a---yuKpFrg"
+  },
+  {
+    "id": 127,
+    "name": "대구 옥연지 송해공원",
+    "location": "대구 달성",
+    "coords": "35.780801, 128.480399",
+    "points": [
+      [35.780801, 128.480399]
+    ],
+    "type": "산책",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "저수지 수변 데크길 / 좌표는 둘레길 안내도 기준",
+    "recommend": 1,
+    "channels": ["Jay쌤여행TV"],
+    "channel": "Jay쌤여행TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/a---yuKpFrg",
+        "title": "한국 최고의 수변산책로 BEST4 (5편) /국내여행 추천 /10월 국내여행지 추천 /11월 국내여행지 추천 /걷기 좋은길 /수변 데크길 /데크 산책로 /트레킹 명소",
+        "channel": "Jay쌤여행TV"
+      }
+    ],
+    "url": "https://youtu.be/a---yuKpFrg"
+  },
+  {
+    "id": 128,
+    "name": "전주 아중호수 수변산책로",
+    "location": "전북 전주",
+    "coords": "35.821844, 127.177146",
+    "points": [
+      [35.821844, 127.177146]
+    ],
+    "type": "산책",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "호수 수변 데크길 / 좌표는 호수 중심 기준",
+    "recommend": 1,
+    "channels": ["Jay쌤여행TV"],
+    "channel": "Jay쌤여행TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/a---yuKpFrg",
+        "title": "한국 최고의 수변산책로 BEST4 (5편) /국내여행 추천 /10월 국내여행지 추천 /11월 국내여행지 추천 /걷기 좋은길 /수변 데크길 /데크 산책로 /트레킹 명소",
+        "channel": "Jay쌤여행TV"
+      }
+    ],
+    "url": "https://youtu.be/a---yuKpFrg"
+  },
+  {
+    "id": 129,
+    "name": "세종 고복저수지 데크길",
+    "location": "세종 연서면",
+    "coords": "36.605794, 127.235108",
+    "points": [
+      [36.605794, 127.235108]
+    ],
+    "type": "산책",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "저수지 수변 데크길 / 좌표는 저수지 중심 기준",
+    "recommend": 1,
+    "channels": ["Jay쌤여행TV"],
+    "channel": "Jay쌤여행TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/a---yuKpFrg",
+        "title": "한국 최고의 수변산책로 BEST4 (5편) /국내여행 추천 /10월 국내여행지 추천 /11월 국내여행지 추천 /걷기 좋은길 /수변 데크길 /데크 산책로 /트레킹 명소",
+        "channel": "Jay쌤여행TV"
+      }
+    ],
+    "url": "https://youtu.be/a---yuKpFrg"
+  },
+  {
+    "id": 130,
+    "name": "하동 쌍계사",
+    "location": "경남 하동",
+    "coords": "35.232573, 127.650089",
+    "points": [
+      [35.232573, 127.650089]
+    ],
+    "type": "사찰",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "지리산 천년고찰",
+    "recommend": 1,
+    "channels": ["유랑쓰 YOURANGSS"],
+    "channel": "유랑쓰 YOURANGSS",
+    "videos": [
+      {
+        "url": "https://youtu.be/RSf6Wv-21OM",
+        "title": "한국에 이런 곳이 있었다니... 해외여행만 다닌 게 후회됩니다",
+        "channel": "유랑쓰 YOURANGSS"
+      }
+    ],
+    "url": "https://youtu.be/RSf6Wv-21OM"
+  },
+  {
+    "id": 131,
+    "name": "리움미술관",
+    "location": "서울 용산",
+    "coords": "37.536974, 127.000546",
+    "points": [
+      [37.536974, 127.000546]
+    ],
+    "type": "전시",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "삼성문화재단 미술관 / 실내 / 좌표는 인근 버스정류장(한남동주민센터.리움미술관) 기준",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 132,
+    "name": "포스코미술관",
+    "location": "서울 강남",
+    "coords": "37.505789, 127.056095",
+    "points": [
+      [37.505789, 127.056095]
+    ],
+    "type": "전시",
+    "fee": "무료",
+    "season": "연중",
+    "features": "테헤란로 440 포스코센터 / 실내",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 133,
+    "name": "현대모터스튜디오 서울",
+    "location": "서울 강남",
+    "coords": "37.521274, 127.034328",
+    "points": [
+      [37.521274, 127.034328]
+    ],
+    "type": "전시",
+    "fee": "무료",
+    "season": "연중",
+    "features": "언주로 738 / 자동차 전시 / 실내",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 134,
+    "name": "일상비일상의틈",
+    "location": "서울 강남",
+    "coords": "",
+    "points": [],
+    "type": "전시·카페",
+    "fee": "무료",
+    "season": "연중",
+    "features": "LG유플러스 복합문화공간 / 강남대로 426, 강남역 인근",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 135,
+    "name": "KT온마루",
+    "location": "서울 종로",
+    "coords": "",
+    "points": [],
+    "type": "전시",
+    "fee": "무료",
+    "season": "연중",
+    "features": "KT광화문빌딩 West (세종대로 178) / 실내 / 국립고궁박물관과 700m 이내라 잘못 합쳐지지 않도록 좌표 비움 (OSM 37.572333, 126.977862)",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 136,
+    "name": "윌로우하우스",
+    "location": "서울 동작",
+    "coords": "37.512629, 126.933306",
+    "points": [
+      [37.512629, 126.933306]
+    ],
+    "type": "전시",
+    "fee": "무료",
+    "season": "연중",
+    "features": "유한양행 공간 / 노량진로 74",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 137,
+    "name": "더샵갤러리",
+    "location": "서울 강남",
+    "coords": "",
+    "points": [],
+    "type": "전시",
+    "fee": "무료",
+    "season": "연중",
+    "features": "포스코이앤씨 주거문화 전시관 / 자곡로 210, 수서역 인근",
+    "recommend": 1,
+    "channels": ["유리소리TV"],
+    "channel": "유리소리TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/IvxGRPycv2M",
+        "title": "🏢대기업이 무료로 개방한 서울 숨은명소 7곳 (저장필수) / 대중교통 국내여행 실내여행지 가볼만한곳 전시 신상 카페 추천 데이트",
+        "channel": "유리소리TV"
+      }
+    ],
+    "url": "https://youtu.be/IvxGRPycv2M"
+  },
+  {
+    "id": 138,
+    "name": "보령 죽도 상화원",
+    "location": "충남 보령",
+    "coords": "",
+    "points": [],
+    "type": "정원·바다",
+    "fee": "성인 7,000원 (차·떡 포함)",
+    "season": "연중",
+    "features": "섬 전체가 한국식 전통 정원 / 지붕 달린 회랑 데크길 / 월~목 휴무",
+    "recommend": 2,
+    "channels": ["일상이여행 Everyday travel", "길따라힐링TV"],
+    "channel": "일상이여행 Everyday travel, 길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      },
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 139,
+    "name": "영동 월류봉·월류봉 둘레길",
+    "location": "충북 영동",
+    "coords": "36.228240, 127.887630",
+    "points": [
+      [36.22824, 127.88763]
+    ],
+    "type": "트레킹·전망",
+    "fee": "무료",
+    "season": "연중",
+    "features": "초강천을 두른 암벽 봉우리 / 반야사까지 8.4km 둘레길 / 좌표는 월류봉 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 140,
+    "name": "진도 이충무공 승전공원·울돌목 스카이워크",
+    "location": "전남 진도·해남",
+    "coords": "34.566071, 126.302432",
+    "points": [
+      [34.566071, 126.302432]
+    ],
+    "type": "역사·바다",
+    "fee": "공원·스카이워크 무료 / 명량해상케이블카 왕복 15,000원",
+    "season": "연중",
+    "features": "명량대첩 현장 울돌목 / 유리바닥 스카이워크 / 좌표는 진도타워 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 141,
+    "name": "영주 무섬마을",
+    "location": "경북 영주",
+    "coords": "36.730753, 128.623345",
+    "points": [
+      [36.730753, 128.623345]
+    ],
+    "type": "역사·문화",
+    "fee": "무료",
+    "season": "연중",
+    "features": "내성천이 감싸는 전통마을 / 150m 외나무다리 / 좌표는 전통한옥수련관 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 142,
+    "name": "신안 12사도 순례길 (기점·소악도)",
+    "location": "전남 신안",
+    "coords": "34.944220, 126.199015",
+    "points": [
+      [34.94422, 126.199015]
+    ],
+    "type": "섬·트레킹",
+    "fee": "무료 (배삯 별도)",
+    "season": "연중",
+    "features": "노두길로 이어진 5개 섬 / 12개 작은 예배당 12km / 좌표는 대기점도 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 143,
+    "name": "봉화 선유교·청량산 예던길",
+    "location": "경북 봉화",
+    "coords": "36.824162, 128.890957",
+    "points": [
+      [36.824162, 128.890957]
+    ],
+    "type": "출렁다리·트레킹",
+    "fee": "무료",
+    "season": "연중",
+    "features": "낙동강 위 출렁다리 / 옛 선비들이 걷던 길 / 좌표는 선유교 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 144,
+    "name": "삼척 덕봉산 해안생태탐방로",
+    "location": "강원 삼척",
+    "coords": "37.388300, 129.238544",
+    "points": [
+      [37.3883, 129.238544]
+    ],
+    "type": "바다·산책",
+    "fee": "무료",
+    "season": "연중",
+    "features": "군사보호구역이던 해안 / 외나무다리와 해안 데크길 / 좌표는 덕봉산 기준",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 145,
+    "name": "강진 설록다원",
+    "location": "전남 강진",
+    "coords": "",
+    "points": [],
+    "type": "정원·전망",
+    "fee": "무료",
+    "season": "연중",
+    "features": "월출산 아래 차밭 / 오전·늦은 오후 방문 추천",
+    "recommend": 1,
+    "channels": ["일상이여행 Everyday travel"],
+    "channel": "일상이여행 Everyday travel",
+    "videos": [
+      {
+        "url": "https://youtu.be/FUVtOyIh81Y",
+        "title": "저평가된 국내여행지 2탄! 더 유명해지기 전에 다녀와야 하는 절경 8곳",
+        "channel": "일상이여행 Everyday travel"
+      }
+    ],
+    "url": "https://youtu.be/FUVtOyIh81Y"
+  },
+  {
+    "id": 146,
+    "name": "제천 의림지",
+    "location": "충북 제천",
+    "coords": "37.173245, 128.210629",
+    "points": [
+      [37.173245, 128.210629]
+    ],
+    "type": "산책·역사",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "호수 따라 걷는 산책 / 좌표는 저수지 기준",
+    "recommend": 1,
+    "channels": ["맛쫑tour"],
+    "channel": "맛쫑tour",
+    "videos": [
+      {
+        "url": "https://youtu.be/wvgop6C8bnA",
+        "title": "10월 11월 충청도 가볼만한곳 5곳｜가을 단풍부터 꽃축제까지",
+        "channel": "맛쫑tour"
+      }
+    ],
+    "url": "https://youtu.be/wvgop6C8bnA"
+  },
+  {
+    "id": 147,
+    "name": "당진 삼선산수목원",
+    "location": "충남 당진",
+    "coords": "36.908884, 126.589454",
+    "points": [
+      [36.908884, 126.589454]
+    ],
+    "type": "정원",
+    "fee": "미확인",
+    "season": "가을",
+    "features": "아이와 함께 가기 좋은 수목원",
+    "recommend": 1,
+    "channels": ["맛쫑tour"],
+    "channel": "맛쫑tour",
+    "videos": [
+      {
+        "url": "https://youtu.be/wvgop6C8bnA",
+        "title": "10월 11월 충청도 가볼만한곳 5곳｜가을 단풍부터 꽃축제까지",
+        "channel": "맛쫑tour"
+      }
+    ],
+    "url": "https://youtu.be/wvgop6C8bnA"
+  },
+  {
+    "id": 148,
+    "name": "태안 네이처월드",
+    "location": "충남 태안",
+    "coords": "36.616399, 126.300892",
+    "points": [
+      [36.616399, 126.300892]
+    ],
+    "type": "정원·전시",
+    "fee": "미확인",
+    "season": "가을(꽃축제)",
+    "features": "가을꽃박람회",
+    "recommend": 1,
+    "channels": ["맛쫑tour"],
+    "channel": "맛쫑tour",
+    "videos": [
+      {
+        "url": "https://youtu.be/wvgop6C8bnA",
+        "title": "10월 11월 충청도 가볼만한곳 5곳｜가을 단풍부터 꽃축제까지",
+        "channel": "맛쫑tour"
+      }
+    ],
+    "url": "https://youtu.be/wvgop6C8bnA"
+  },
+  {
+    "id": 149,
+    "name": "포항 스페이스워크·환호공원",
+    "location": "경북 포항",
+    "coords": "36.065109, 129.390440",
+    "points": [
+      [36.065109, 129.39044]
+    ],
+    "type": "전망·산책",
+    "fee": "무료",
+    "season": "연중",
+    "features": "333m 철제 트랙 위 하늘 산책 / 환호공원 식물원 / 좌표는 스페이스워크 기준",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 150,
+    "name": "서해랑 케이블카 (제부도)",
+    "location": "경기 화성",
+    "coords": "",
+    "points": [],
+    "type": "바다·전망",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "물때 걱정 없는 해상 케이블카 / 서해 낙조",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 151,
+    "name": "포천 한탄강 하늘다리",
+    "location": "경기 포천",
+    "coords": "",
+    "points": [],
+    "type": "출렁다리",
+    "fee": "무료",
+    "season": "연중",
+    "features": "한탄강 유네스코 세계지질공원 / 영북면 대회산리",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 152,
+    "name": "연천 재인폭포",
+    "location": "경기 연천",
+    "coords": "38.069070, 127.134839",
+    "points": [
+      [38.06907, 127.134839]
+    ],
+    "type": "폭포",
+    "fee": "무료",
+    "season": "연중",
+    "features": "한탄강 세계지질공원 주상절리 폭포",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 153,
+    "name": "포천 화적연",
+    "location": "경기 포천",
+    "coords": "",
+    "points": [],
+    "type": "계곡·유적",
+    "fee": "무료",
+    "season": "연중",
+    "features": "한탄강 세계지질공원 지질명소",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 154,
+    "name": "청풍호반 케이블카·옥순봉 출렁다리",
+    "location": "충북 제천",
+    "coords": "37.004987, 128.154751",
+    "points": [
+      [37.004987, 128.154751]
+    ],
+    "type": "출렁다리·전망",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "내륙의 바다 청풍호 절경 / 좌표는 케이블카 기준",
+    "recommend": 1,
+    "channels": ["길따라힐링TV"],
+    "channel": "길따라힐링TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/VotAFwGJ9FE",
+        "title": "(2026년) 요즘 뜨는 새로운 국내여행 명소 5곳 | 가을 여행지 추천 | 60대 이상 시니어 여행",
+        "channel": "길따라힐링TV"
+      }
+    ],
+    "url": "https://youtu.be/VotAFwGJ9FE"
+  },
+  {
+    "id": 155,
+    "name": "광양 파노라마워크",
+    "location": "전남 광양",
+    "coords": "",
+    "points": [],
+    "type": "전망·산책",
+    "fee": "미확인",
+    "season": "연중",
+    "features": "2026년 10월 개장한 구봉산 정상 스카이워크 / 광양만 조망",
+    "recommend": 1,
+    "channels": ["Jay쌤여행TV"],
+    "channel": "Jay쌤여행TV",
+    "videos": [
+      {
+        "url": "https://youtu.be/OH4X9NrHBqg",
+        "title": "드디어 10월 9일에 개장 180억이 투입된 새로운 랜드마크 여행지 /10월 국내여행지 추천 /국내여행 /광양 파노라마워크 /광양여행 /전남여행 /신상여행지 /스카이워크",
+        "channel": "Jay쌤여행TV"
+      }
+    ],
+    "url": "https://youtu.be/OH4X9NrHBqg"
+  },
+  {
+    "id": 156,
+    "name": "합천 신소양체육공원 핑크뮬리",
+    "location": "경남 합천",
+    "coords": "",
+    "points": [],
+    "type": "정원",
+    "fee": "미확인",
+    "season": "가을(핑크뮬리)",
+    "features": "핑크뮬리 군락",
+    "recommend": 1,
+    "channels": ["더여행"],
+    "channel": "더여행",
+    "videos": [
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
+      }
+    ],
+    "url": "https://youtu.be/u-i5ndRbKtI"
+  },
+  {
+    "id": 157,
+    "name": "합천 황매산 억새",
+    "location": "경남 합천·산청",
+    "coords": "35.494236, 127.974589",
+    "points": [
+      [35.494236, 127.974589]
+    ],
+    "type": "트레킹",
+    "fee": "미확인",
+    "season": "가을(억새)",
+    "features": "억새 평원 / 좌표는 황매산 정상 기준",
+    "recommend": 1,
+    "channels": ["더여행"],
+    "channel": "더여행",
+    "videos": [
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
+      }
+    ],
+    "url": "https://youtu.be/u-i5ndRbKtI"
+  },
+  {
+    "id": 158,
+    "name": "울주 간월재 억새",
+    "location": "울산 울주",
+    "coords": "35.547918, 129.045114",
+    "points": [
+      [35.547918, 129.045114]
+    ],
+    "type": "트레킹",
+    "fee": "미확인",
+    "season": "가을(억새)",
+    "features": "영남알프스 억새 평원 / 좌표는 간월재 기준",
+    "recommend": 1,
+    "channels": ["더여행"],
+    "channel": "더여행",
+    "videos": [
+      {
+        "url": "https://youtu.be/u-i5ndRbKtI",
+        "title": "10월가볼만한곳 2026 베스트13",
+        "channel": "더여행"
+      }
+    ],
+    "url": "https://youtu.be/u-i5ndRbKtI"
   }
 ];
