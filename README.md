@@ -3,7 +3,7 @@
 국내 여행 유튜브 영상에서 소개된 여행지를 모아 지도로 보여주는 페이지예요.
 여러 채널이 같은 곳을 소개할수록 **추천수**가 올라가요.
 
-**지도 보기:** https://whochu7004.github.io/utrip/
+**지도 보기:** https://misojiho.github.io/utrip/
 
 ## 기능
 
