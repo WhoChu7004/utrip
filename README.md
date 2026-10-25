@@ -30,6 +30,8 @@ powershell -ExecutionPolicy Bypass -File .\fetch-video.ps1 -Search "국내 여�
 powershell -ExecutionPolicy Bypass -File .\fetch-video.ps1 -Url <videoId>
 # 분석 결과(inbox\*.json)를 병합하고 data.js 다시 만들기
 powershell -ExecutionPolicy Bypass -File .\merge-videos.ps1 -InputPath .\inbox\2026-10-25.json
+# 바뀐 데이터(places.json, data.js, inbox)만 커밋해서 GitHub에 올리기
+powershell -ExecutionPolicy Bypass -File .\publish-data.ps1
 # 로컬에서 보기 (http://localhost:8080)
 powershell -ExecutionPolicy Bypass -File .\serve.ps1
 ```
