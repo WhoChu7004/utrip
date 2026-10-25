@@ -1,0 +1,11 @@
+# Local tooling and settings
+.claude/
+
+# Unused Naver Maps key (kept out of the public repo)
+WWW/config.js
+
+# Working notes
+추천 여행지 프롬프트.txt
+
+# Excel lock files
+~$*

@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유튜버 추천 여행지</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --surface-2: #f1efe9;
+    --text: #1d1f22;
+    --muted: #6a6f76;
+    --line: #e2dfd7;
+    --accent: #1f6f5c;
+    --accent-soft: #e2f0eb;
+    --shadow: 0 6px 24px rgba(20, 24, 28, .12);
+    --c-water: #2f7fc1;
+    --c-trail: #c26b1d;
+    --c-sea: #138a8a;
+    --c-heritage: #8a4fb5;
+    --c-food: #c2413b;
+    --c-etc: #5d6b3a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: "Noto Sans KR", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+    z-index: 1001;
+  }
+  header h1 { font-size: 34px; margin: 0; font-weight: 700; letter-spacing: -.2px; }
+  header .count { color: var(--muted); font-size: 13px; }
+  .search {
+    margin-left: auto;
+    flex: 1 1 200px;
+    max-width: 280px;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font: inherit;
+    font-size: 14px;
+    background: var(--surface-2);
+    color: var(--text);
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: 1px; background: var(--surface); }
+
+  .filters {
+    display: flex;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    z-index: 1001;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .chip .dot { width: 9px; height: 9px; border-radius: 50%; }
+  .chip[aria-pressed="false"] { opacity: .45; }
+
+  main { flex: 1; display: flex; min-height: 0; position: relative; }
+  #map { flex: 1; min-width: 0; background: #dfe7ea; }
+
+  aside {
+    width: 360px;
+    background: var(--surface);
+    border-left: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .panel-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .panel-head h2 { margin: 0; font-size: 15px; flex: 1; }
+  .sort {
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface-2);
+    color: var(--text);
+    font: inherit;
+    font-size: 13px;
+  }
+  .icon-btn {
+    border: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .panel-body { overflow-y: auto; flex: 1; }
+
+  .list-item {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 16px;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    background: none;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  .list-item:hover, .list-item:focus-visible { background: var(--surface-2); outline: none; }
+  .list-item .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex: none; }
+  .list-item .t { font-size: 14px; font-weight: 500; }
+  .list-item .s { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .list-item.nogeo .t::after { content: " · 좌표 없음"; color: var(--muted); font-weight: 400; font-size: 12px; }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 11px; font-weight: 500; vertical-align: 1px; }
+  .empty { padding: 24px 16px; color: var(--muted); font-size: 14px; }
+
+  .detail { padding: 0 0 20px; }
+  .detail .thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--surface-2); }
+  .detail .inner { padding: 14px 16px 0; }
+  .detail h3 { margin: 0 0 6px; font-size: 18px; line-height: 1.35; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .tag { font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); color: var(--text); }
+  .tag.type { background: var(--accent-soft); color: var(--accent); }
+  dl { margin: 0; display: grid; grid-template-columns: 64px 1fr; gap: 8px 10px; font-size: 14px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; line-height: 1.5; overflow-wrap: anywhere; }
+  dd a { color: var(--accent); }
+  .vlist { margin: 14px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.6; }
+  .vlist a { color: var(--accent); }
+  .vlist .ch { color: var(--muted); font-size: 12px; margin-left: 4px; }
+  .features { margin: 14px 0 0; padding-left: 18px; font-size: 14px; line-height: 1.6; }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.naver { background: #03c75a; border-color: #03c75a; color: #fff; }
+
+  /* Markers */
+  .pin { background: none; border: 0; }
+  .pin .wrap { display: flex; align-items: center; gap: 4px; width: max-content; transform: translate(-7px, -7px); white-space: nowrap; }
+  .pin .dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, .35); flex: none;
+  }
+  .pin .label {
+    font: 500 12px/1 "Noto Sans KR", system-ui, sans-serif;
+    color: #1d1f22;
+    background: rgba(255, 255, 255, .92);
+    padding: 3px 6px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    max-width: 180px;
+    flex: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .pin.active .dot { transform: scale(1.35); }
+  .pin.active .label { background: #1d1f22; color: #fff; }
+
+  .cluster { background: none; }
+  .cluster div {
+    width: 100%; height: 100%;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font: 700 13px/1 "Noto Sans KR", system-ui, sans-serif;
+    border: 3px solid rgba(255, 255, 255, .85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a; --surface: #1d2024; --surface-2: #272b30; --text: #e8e6e1;
+      --muted: #9aa0a8; --line: #30353b; --accent: #4fb79a; --accent-soft: #1f3a33;
+    }
+    #map { background: #20262b; }
+  }
+
+  @media (max-width: 760px) {
+    aside {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      width: auto;
+      max-height: 55%;
+      border-left: 0;
+      border-top: 1px solid var(--line);
+      border-radius: 14px 14px 0 0;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+      transform: translateY(calc(100% - 52px));
+      transition: transform .25s ease;
+    }
+    aside.open { transform: none; }
+    .search { max-width: none; margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>유튜버 추천 여행지</h1>
+  <span class="count" id="count"></span>
+  <input class="search" id="search" type="search" placeholder="여행지·지역 검색" aria-label="여행지 검색">
+</header>
+<nav class="filters" id="filters" aria-label="유형 필터"></nav>
+<main>
+  <div id="map" role="application" aria-label="대한민국 여행지 지도"></div>
+  <aside id="panel">
+    <div class="panel-head">
+      <button class="icon-btn" id="back" title="목록으로" hidden>&larr;</button>
+      <h2 id="panel-title">여행지 목록</h2>
+      <select class="sort" id="sort" aria-label="목록 정렬">
+        <option value="name">이름순</option>
+        <option value="recommend">추천순</option>
+      </select>
+      <button class="icon-btn" id="toggle" title="패널 열기/닫기">&#9776;</button>
+    </div>
+    <div class="panel-body" id="panel-body"></div>
+  </aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+<script src="data.js"></script>
+<script>
+(function () {
+  const DATA = window.TRAVEL_DATA || [];
+
+  // Category is derived from the 유형 text so new rows are colored automatically.
+  const CATEGORIES = [
+    { key: "water", label: "계곡·폭포·물놀이", color: "var(--c-water)", hex: "#2f7fc1", re: /계곡|폭포|물놀이|해변|스노클링/ },
+    { key: "trail", label: "잔도·트레킹", color: "var(--c-trail)", hex: "#c26b1d", re: /잔도|트레킹|산책|출렁|산행/ },
+    { key: "sea", label: "섬·바다", color: "var(--c-sea)", hex: "#138a8a", re: /섬|바다/ },
+    { key: "heritage", label: "사찰·역사·문화", color: "var(--c-heritage)", hex: "#8a4fb5", re: /사찰|암자|서원|역사|유적|돌탑|문화|동굴|전시|정원|미디어/ },
+    { key: "food", label: "맛집·숙박", color: "var(--c-food)", hex: "#c2413b", re: /맛집|숙박|카페/ },
+    { key: "etc", label: "기타", color: "var(--c-etc)", hex: "#5d6b3a", re: /.*/ },
+  ];
+  const categoryOf = (item) => CATEGORIES.find((c) => c.re.test(item.type || "")) || CATEGORIES.at(-1);
+
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+  const youtubeId = (url) => (String(url).match(/(?:youtu\.be\/|v=)([\w-]{11})/) || [])[1];
+
+  // A row may hold several places ("A / B" or "A·B·C"); name each point when the counts line up.
+  function pointNames(item) {
+    const pts = item.points || [];
+    if (pts.length < 2) return pts.map(() => item.name);
+    for (const sep of [" / ", "·"]) {
+      const parts = item.name.split(sep).map((s) => s.trim()).filter(Boolean);
+      if (parts.length === pts.length) return parts;
+    }
+    return pts.map((_, i) => `${item.name} (${i + 1})`);
+  }
+
+  // ---- Map ----
+  const map = L.map("map", {
+    zoomControl: true,
+    zoomSnap: 0.5,
+    minZoom: 6,
+    maxBounds: [[31.5, 122.5], [40.0, 133.5]],
+    maxBoundsViscosity: 0.8,
+  });
+  // Esri tiles need no API key and work when the page is opened straight from disk.
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+    maxZoom: 19,
+    attribution: "Tiles &copy; Esri &mdash; Esri, HERE, Garmin, USGS, NGA, EPA, USDA, NPS",
+  }).addTo(map);
+  const KOREA = L.latLngBounds([33.1, 125.0], [38.6, 131.0]);
+  map.fitBounds(KOREA);
+
+  const cluster = L.markerClusterGroup({
+    maxClusterRadius: 70,
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: true,
+    iconCreateFunction(c) {
+      const n = c.getChildCount();
+      const size = n < 5 ? 36 : n < 15 ? 44 : 52;
+      return L.divIcon({ html: `<div>${n}</div>`, className: "cluster", iconSize: [size, size] });
+    },
+  });
+  map.addLayer(cluster);
+
+  const markersById = new Map();
+  for (const item of DATA) {
+    const cat = categoryOf(item);
+    item._cat = cat;
+    const names = pointNames(item);
+    const list = [];
+    (item.points || []).forEach((p, i) => {
+      const votes = item.recommend > 1 ? ` ·${item.recommend}` : "";
+      const icon = L.divIcon({
+        className: "pin",
+        html: `<div class="wrap"><span class="dot" style="background:${cat.hex}"></span><span class="label">${esc(names[i])}${votes}</span></div>`,
+        iconSize: [0, 0],
+      });
+      const m = L.marker(p, { icon, title: names[i], keyboard: true });
+      m.on("click", () => select(item.id, i));
+      list.push(m);
+    });
+    markersById.set(item.id, list);
+  }
+
+  // ---- Filters & search ----
+  const active = new Set(CATEGORIES.map((c) => c.key));
+  let query = "";
+  const filtersEl = document.getElementById("filters");
+  for (const c of CATEGORIES) {
+    if (!DATA.some((d) => d._cat === c)) continue;
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.setAttribute("aria-pressed", "true");
+    b.innerHTML = `<span class="dot" style="background:${c.color}"></span>${esc(c.label)}`;
+    b.onclick = () => {
+      active.has(c.key) ? active.delete(c.key) : active.add(c.key);
+      b.setAttribute("aria-pressed", String(active.has(c.key)));
+      refresh();
+    };
+    filtersEl.appendChild(b);
+  }
+  document.getElementById("search").addEventListener("input", (e) => {
+    query = e.target.value.trim().toLowerCase();
+    refresh();
+  });
+
+  const visible = (item) =>
+    active.has(item._cat.key) &&
+    (!query || [item.name, item.location, item.type, item.features, (item.channels || []).join(" ")].join(" ").toLowerCase().includes(query));
+
+  function refresh() {
+    cluster.clearLayers();
+    const shown = DATA.filter(visible);
+    cluster.addLayers(shown.flatMap((d) => markersById.get(d.id)));
+    const placed = DATA.filter((d) => d.points && d.points.length).length;
+    document.getElementById("count").textContent =
+      `${shown.length}/${DATA.length}곳 표시 · 지도 위치 ${placed}곳`;
+    if (!currentId) renderList();
+  }
+
+  // ---- Panel ----
+  const panel = document.getElementById("panel");
+  const body = document.getElementById("panel-body");
+  const title = document.getElementById("panel-title");
+  const back = document.getElementById("back");
+  let currentId = null;
+  let activeMarker = null;
+
+  document.getElementById("toggle").onclick = () => panel.classList.toggle("open");
+  back.onclick = () => { setActive(null); currentId = null; renderList(); };
+
+  const sortEl = document.getElementById("sort");
+  const byName = (a, b) => a.name.localeCompare(b.name, "ko");
+  const SORTS = {
+    name: byName,
+    recommend: (a, b) => (b.recommend || 0) - (a.recommend || 0) || byName(a, b),
+  };
+  sortEl.onchange = renderList;
+
+  function renderList() {
+    title.textContent = "여행지 목록";
+    back.hidden = true;
+    sortEl.hidden = false;
+    const shown = DATA.filter(visible).sort(SORTS[sortEl.value]);
+    if (!shown.length) { body.innerHTML = `<p class="empty">조건에 맞는 여행지가 없습니다.</p>`; return; }
+    body.innerHTML = "";
+    for (const d of shown) {
+      const b = document.createElement("button");
+      const hasGeo = d.points && d.points.length;
+      b.className = "list-item" + (hasGeo ? "" : " nogeo");
+      b.innerHTML = `<span class="dot" style="background:${d._cat.color}"></span>
+        <span><div class="t">${esc(d.name)}<span class="badge">추천 ${d.recommend}</span></div><div class="s">${esc(d.location)} · ${esc(d.type)}</div></span>`;
+      b.onclick = () => select(d.id, 0, true);
+      body.appendChild(b);
+    }
+  }
+
+  function setActive(marker) {
+    if (activeMarker && activeMarker._icon) activeMarker._icon.classList.remove("active");
+    activeMarker = marker;
+    if (marker && marker._icon) marker._icon.classList.add("active");
+  }
+
+  function select(id, pointIndex = 0, fly = false) {
+    const d = DATA.find((x) => x.id === id);
+    if (!d) return;
+    currentId = id;
+    const markers = markersById.get(id);
+    const m = markers[pointIndex];
+    if (m && fly) {
+      cluster.zoomToShowLayer(m, () => setActive(m));
+    } else {
+      setActive(m || null);
+    }
+    renderDetail(d, pointIndex);
+    panel.classList.add("open");
+  }
+
+  function renderDetail(d, pointIndex) {
+    title.textContent = `추천 ${d.recommend}`;
+    back.hidden = false;
+    sortEl.hidden = true;
+    const vid = youtubeId(d.url);
+    const p = (d.points || [])[pointIndex];
+    const names = pointNames(d);
+    const features = String(d.features || "").split(" / ").map((s) => s.trim()).filter(Boolean);
+    // Naver mobile-web links take WGS84 coordinates directly: a pin at the point, and a car route from the viewer's location.
+    const mapLinks = p
+      ? `<a class="btn naver" target="_blank" rel="noopener" href="https://m.map.naver.com/map.naver?lat=${p[0]}&lng=${p[1]}&dlevel=11&mapMode=0">네이버 지도</a>
+         <a class="btn naver" target="_blank" rel="noopener" href="https://m.map.naver.com/route.nhn?menu=route&ename=${encodeURIComponent(names[pointIndex])}&ex=${p[1]}&ey=${p[0]}&pathType=0&showMap=true">길찾기</a>`
+      : "";
+    const otherPoints = (d.points || []).length > 1
+      ? `<dt>장소</dt><dd>${names.map((n, i) => i === pointIndex ? `<strong>${esc(n)}</strong>` : `<a href="#" data-pt="${i}">${esc(n)}</a>`).join(" · ")}</dd>`
+      : "";
+    const vids = d.videos || [];
+    const videoList = vids.length
+      ? `<ul class="vlist">${vids.map((v, i) => `<li><a target="_blank" rel="noopener" href="${esc(v.url)}">${esc(v.title || `영상 ${i + 1}`)}</a><span class="ch">${esc(v.channel)}</span></li>`).join("")}</ul>`
+      : "";
+    body.innerHTML = `
+      <article class="detail">
+        ${vid ? `<img class="thumb" alt="" loading="lazy" src="https://i.ytimg.com/vi/${vid}/hqdefault.jpg">` : ""}
+        <div class="inner">
+          <h3>${esc(d.name)}</h3>
+          <div class="tags">
+            <span class="tag type">${esc(d.type)}</span>
+            <span class="tag">${esc(d.season)}</span>
+          </div>
+          <dl>
+            ${otherPoints}
+            <dt>위치</dt><dd>${esc(d.location)}</dd>
+            <dt>요금</dt><dd>${esc(d.fee)}</dd>
+            <dt>좌표</dt><dd>${esc(d.coords)}</dd>
+            <dt>채널</dt><dd>${(d.channels || []).map(esc).join(" · ")}</dd>
+          </dl>
+          ${videoList}
+          ${features.length ? `<ul class="features">${features.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}
+          <div class="actions">
+            <a class="btn primary" target="_blank" rel="noopener" href="${esc(d.url)}">영상 보기</a>
+            ${mapLinks}
+          </div>
+        </div>
+      </article>`;
+    body.scrollTop = 0;
+    body.querySelectorAll("[data-pt]").forEach((a) =>
+      a.addEventListener("click", (e) => { e.preventDefault(); select(d.id, Number(a.dataset.pt), true); }));
+  }
+
+  // Keep the highlight when clusters re-render the marker's DOM.
+  map.on("zoomend moveend", () => { if (activeMarker) setActive(activeMarker); });
+
+  refresh();
+})();
+</script>
+</body>
+</html>
